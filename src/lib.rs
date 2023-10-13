@@ -25,9 +25,10 @@ pub enum Error {
 
 /// Converts a Vulkan format to the appropriate descriptor.
 /// 
-/// Returns the descriptor as a static slice of `u32`s, or an [Error] on failure. If written to a
-/// KTX or KTX2 file, the descriptor must be written in little endian byte order per the
-/// specification. The slice includes the leading size word.
+/// Returns the descriptor as a static slice of `u32`s, or an [enum@Error] on
+/// failure. If written to a KTX or KTX2 file, the descriptor must be written in
+/// little endian byte order per the specification. The slice includes the
+/// leading size word.
 #[inline]
 pub fn vk2dfd(vulkan_format: VkFormat) -> Result<&'static [u32], Error> {
     VK_TO_DFD

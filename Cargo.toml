@@ -2,10 +2,14 @@
 name = "vk2dfd"
 version = "0.1.0"
 edition = "2021"
-authors = [ "Patrick Walton <pcwalton@mimiga.net>" ]
+authors = ["Patrick Walton <pcwalton@mimiga.net>"]
 rust-version = "1.74"
 description = "A tiny crate to convert Vulkan formats to Khronos Data Format Descriptors"
 readme = "README.md"
+license = "MIT OR Apache-2.0"
+documentation = "https://docs.rs/vk2dfd"
+homepage = "https://github.com/pcwalton/vk2dfd/"
+repository = "https://github.com/pcwalton/vk2dfd/"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
